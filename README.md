@@ -1,2 +1,4 @@
-# py_namescreening
-A small Python program which loads the WC list into memory and implements name matching using Levenshtein Distance Ratio & Weighted Ratio string matching algorithms. These features are exposed via regular Python as well as a RESTful API developed using FastAPI. Uses enums, container classes and various other data structures to manage the WC and match data. Packages used include: rapidfuzz, FastAPI and the MySQL JDBC connector. 
+# py_etlloader
+ETL loader for entities (e.g. customers) and transactions from CSV file to DB. Features: 1) CSV file streaming to minimize memory use, 2) configurable CSV to DB column mappings via an external JSON file, 3) configurable validation for each CSV column, 4) outputs bad records separately so they can be easily re-ingested.
+
+All these are standard features in most commercial ETL data loaders.
