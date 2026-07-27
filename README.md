@@ -1,0 +1,2 @@
+# py_namescreening
+A small Python program which loads the WC list into memory and implements name matching using Levenshtein Distance Ratio & Weighted Ratio string matching algorithms. These features are exposed via regular Python as well as a RESTful API developed using FastAPI. Uses enums, container classes and various other data structures to manage the WC and match data. Packages used include: rapidfuzz, FastAPI and the MySQL JDBC connector. 

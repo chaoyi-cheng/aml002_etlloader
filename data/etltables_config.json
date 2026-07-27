@@ -1,0 +1,88 @@
+{
+    "tables": [
+		{
+            "table_name": "etl_entity",
+            "column_mappings": [
+                {
+                    "csv_column": "csv_entity_id",
+                    "db_column": "entity_id",
+                    "validator": "string",
+                    "required": true,
+					"primary_key": true
+                },
+                {
+                    "csv_column": "csv_entity_type",
+                    "db_column": "entity_type",
+                    "validator": "string",
+                    "required": true
+                },
+                {
+                    "csv_column": "csv_entity_name",
+                    "db_column": "entity_name",
+                    "validator": "string",
+                    "required": true
+                }
+            ]
+        },
+		{
+            "table_name": "etl_transactions",
+            "column_mappings": [
+                {
+                    "csv_column": "csv_tran_id",
+                    "db_column": "tran_id",
+                    "validator": "string",
+                    "required": true,
+					"primary_key": true
+                },
+                {
+                    "csv_column": "csv_entity_id",
+                    "db_column": "entity_id",
+                    "validator": "string",
+                    "required": true
+                },
+                {
+                    "csv_column": "csv_tran_type",
+                    "db_column": "tran_type",
+                    "validator": "string",
+                    "required": true
+                },
+				{
+                    "csv_column": "csv_tran_amount_int",
+                    "db_column": "tran_amount_int",
+                    "validator": "integer",
+                    "required": true
+                },
+                {
+                    "csv_column": "csv_tran_amount_float",
+                    "db_column": "tran_amount_float",
+                    "validator": "float",
+                    "required": true
+                },
+				{
+                    "csv_column": "csv_tran_currency",
+                    "db_column": "tran_currency",
+                    "validator": "string",
+                    "required": true
+                },
+				{
+                    "csv_column": "csv_tran_datetime",
+                    "db_column": "tran_datetime",
+                    "validator": "datetime",
+                    "required": true
+                },
+				{
+                    "csv_column": "csv_tran_crdb",
+                    "db_column": "tran_crdb",
+                    "validator": "boolean",
+                    "required": true
+                },
+				{
+                    "csv_column": "csv_tran_details",
+                    "db_column": "tran_details",
+                    "validator": "none",
+                    "required": false
+                }
+            ]
+        }
+    ]
+}
